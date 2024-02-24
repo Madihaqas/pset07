@@ -49,19 +49,43 @@ A \textit{rational number} can be written as $\frac{p}{q}$ where $p$ and $q$ are
 \question
   Show through contraposition: If $x^2 - 6x + 5$ is even, then $x$ is odd.
   \begin{solution}
-    % Enter your solution here.
+   
+    Proof through contraposition.\\
+    If $x$ is even then $x^2 - 6x + 5$ is odd.\\
+    Any even number $x$ can be written as $x$ = 2$k$.\\
+    Substituting $x$ with 2$k$,  $(2$k$)^2 - 6(2$k$) + 5$\\
+     $4$k$^2 - 12$k$ + 5$\\
+     $4$k$^2 - 12$k$ + 4 +1$\\
+     $ 2(2$k$^2 - 6$k$ + 2) +1$\\
+     $n=(2$k$^2 - 6$k$ + 2) $\\
+     $ 2n +1$, this is by definition an odd number.\\
+     Assuming $x$ to be even lead us to $x^2 - 6x + 5$ to be odd, then the opposite must also be true. Hence proved that If $x^2 - 6x + 5$ is even, then $x$ is odd.
   \end{solution}
 
 \question Provide a counterexample to disprove: If $n$ is an integer and $n^2$ is divisible by 4, then $n$ is divisible by 4. Explain why it is a counterexample.
 
   \begin{solution}
-    % Enter your solution here.
+   
+    Taking n=6, then $n^2$=36.\\
+    36 is divisible by 4, 36/4=9, however 6 is not divisible by 4 6/4= 1.5 which is not an integer. 
   \end{solution}
   
 \question Prove using contradiction that $\sqrt{2}$ is irrational.
 
   \begin{solution}
-    % Enter your solution here.
+   
+    Assuming $\sqrt{2}$ is rational.\\
+    Then it can be written as $\frac{p}{q}$ where $p$ and $q$ are integers and $q\neq 0$.\\
+    $\sqrt{2}$ = $\frac{p}{q}$.\\
+    squaring on both sides: 2= $\frac{p^2}{q^2}$\\
+    Multiplying $q^2$ on both sides: $2q^2$= $p^2$\\
+    Using the definition of even numbers, we know that $p^2$ is even, and if $p^2$ is even we can conclude that $p$ is also even. $p$ then can be written as $2n$.\\
+    Substituting the value of $(2n)^2$= $2q^2$. \\
+     $4n^2$= $2q^2$\\
+     $2n^2$= $q^2$\\
+     From the definition of even numbers, we can say that $q^2$ is an even number and if $q^2$ is an even number then q is also an even number.\\
+     We have reached a contradiction, both $p$ and $q$ are even numbers which means they have 2 as a common factor where as if the numbers are rational then they only have 1 as a common factor. 
+     Since there is a contradiction with the assumption, it must mean that  $\sqrt{2}$ is irrational.   
   \end{solution}
   
 \fullwidth{For each of the following problems, clearly mention the proof method that you employ.}
@@ -69,27 +93,77 @@ A \textit{rational number} can be written as $\frac{p}{q}$ where $p$ and $q$ are
 \question Prove that for $n\in\Z$, $n$ is odd if and only if $5n + 6$ is odd.
 
   \begin{solution}
-    % Enter your solution here.
+    
+   (If n is odd then 5n + 6 is odd) and ( If 5n + 6 is odd then n is odd)\\
+   If n is odd then 5n + 6 is odd. \\
+   Using direct proof.\\
+   n= $2k$ + 1.\\
+   5($2k$ + 1) + 6.\\
+   $10k$ + 11\\
+   2( 5$k$ + 5) + 1 is odd.\\
+   Hence proven that when n is odd then 5n + 6 is also odd.\\
+   If 5n + 6 is odd then n is odd\\
+   Using proof of contra position\\
+    If n is even then 5n + 6 is even.\\
+    If n is even then n can be written as, n = 2k.\\
+    Replacing the value of n,  5($2k$) + 6  \\
+    10$k$ + 6\\
+    2(5$k$ + 3)\\
+    (5$k$ + 3) = u\\
+    Then 2$u$ which is even.\\
+    Hence shown that both parts of statements are true so the bi conditional statement is true.
   \end{solution}
 
 \question Prove or disprove: The sum of a rational and an irrational number is a rational number.
 
   \begin{solution}
-    % Enter your solution here.
+    a= rational number x= irrational number b= rational number.\\
+    a + x = b\\
+    Using direct proof\\
+    rearranging the statement, x= b - a\\
+    since both b and a are rational numbers, their difference must also result in a rational number however x here is not rational.\\
+    We can conclude that the statement is false.
     \end{solution}
   
 \question Prove or disprove that for $(x^2 - y^2) \mod 4 \neq 2$ where $x$ and $y$ are integers.\\
   \textit{Hint}: a) Consider the different cases of parities of $x$ nd $y$. b) Use the method of \textit{proof by cases} and apply a proof \textit{without loss of generality} described in Section 1.8.2 in the book.
 
   \begin{solution}
-    % Enter your solution here.
+   
+    When $x$ is even and $y$ is odd, and x $\neq$ y.\\
+    $x$ can be written as $2k$ and $y$ can be written as $2m$ + 1.\\
+    $(2k)^2 - (2m + 1)^2$.\\
+    $4k^2 - (4m^2 + 4m + 1)$\\
+    $4k^2 -4m^2 - 4m - 1$\\
+    $4(k^2 -m^2 - m) - 1$\\
+    $4(k^2 -m^2 - m)$ mod 4 is 0 and -1 mod 4 =3.\\
+    Hence the remainder in this case is 3.\\
+     When $x$ is odd and $y$ is even, and x $\neq$ y.\\
+      $x$ can be written as $2m$ + 1 and $y$ can be written as $2k$.\\
+     $(2m + 1)^2$ -  $(2k)^2$\\
+     $(4m^2 + 4m + 1)$ -$4k^2$\\
+     $4m^2 + 4m -4k^2 + 1 $\\
+    $4(-k^2 +m^2 + m) + 1$\\
+    Remainder in this case is 1.\\
+    When both x and y are even or both are odd then using proof without loss of generality.\\
+    $x$ = 2$m$ and $y$ = $2n$\\
+    $(2m)^2$ - $(2n)^2$\\
+    $4m^2 - 4n^2$\\
+    $4(m^2 - n^2)$\\
+    Remainder in this case would be 0, the same would be true if both were odd numbers.\\
+    Hence shown that  $(x^2 - y^2) \mod 4 \neq 2$ where $x$ and $y$ are integers.
+    
+    
   \end{solution}
 
 \question 
   Prove or disprove that $2^n + 1$ is prime for every $n\in\Z^+$.
 
   \begin{solution}
-    % Enter your solution here.
+    
+    n=3\\
+    $2^3 + 1$ = 8+1 =9\\
+    9 is not a prime number so the statement is false.
   \end{solution}
 \end{questions}
 \end{document}
